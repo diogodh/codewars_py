@@ -1,13 +1,11 @@
-n = 132189
-j = 0
-for i in str(n):
-    j = int(i)
-    j = i + j
+n = 493193
+k = 0
 
-    k += pow(int(i), p)
-    p += 1
+while len(str(n)) > 1:
+    for char in str(n):
+        k += int(char)
+    n = k
+    char = k = 0
+print(n)
 
-if k % n == 0:
-    print(k //n)
-else:
-    print("None")
+#print(n%9 or n and 9)
